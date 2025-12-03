@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio do Estudante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Meu Portfólio</div>
+            <ul class="menu">
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button id="toggle-tema">Mudar Tema</button>
+        </nav>
+    </header>
+
+    <section id="sobre" class="secao">
+        <div class="conteudo">
+            <img src="img/perfil.jpg" alt="Foto de Perfil" class="foto-perfil">
+            <h1>Olá, eu sou um Desenvolvedor em Formação!</h1>
+            <p>
+                Sou estudante de Análise e Desenvolvimento de Sistemas. 
+                Tenho paixão por tecnologia e estou focando meus estudos em Python e Desenvolvimento Web.
+                Atualmente estou aprendendo sobre arquitetura de computadores e lógica de programação.
+            </p>
+        </div>
+    </section>
+
+    <section id="formacao" class="secao">
+        <h2>Minha Formação</h2>
+        <div class="card">
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p>Centro Universitário Internacional UNINTER</p>
+            <p>Status: Em andamento (2025)</p>
+        </div>
+        <div class="card">
+            <h3>Cursos Complementares</h3>
+            <ul>
+                <li>Python para Iniciantes</li>
+                <li>Lógica de Programação</li>
+                <li>Cybersecurity Essentials</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="portfolio" class="secao">
+        <h2>Meus Projetos</h2>
+        <div class="projeto-card">
+            <img src="img/ecotech.jpg" alt="Print do Projeto EcoTech" class="img-projeto">
+            <h3>Projeto EcoTech Rewards</h3>
+            <p>Um sistema de gamificação desenvolvido para incentivar ações sustentáveis.</p>
+            <p><strong>Tecnologias:</strong> Python, Streamlit.</p>
+            <a href="https://github.com/Aerotevf/EcoTech" target="_blank" class="btn">Ver no GitHub</a>
+        </div>
+    </section>
+
+    <section id="contato" class="secao">
+        <h2>Entre em Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="seu@email.com" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" rows="4" placeholder="Sua mensagem..." required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Desenvolvido para a disciplina de Fundamentos Web - 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

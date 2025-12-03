@@ -1,0 +1,151 @@
+/* Definição de Cores (Variáveis) para facilitar a troca de tema */
+:root {
+    --bg-color: #f4f4f4;       /* Cor de fundo claro */
+    --text-color: #333;        /* Cor do texto escuro */
+    --header-bg: #2c3e50;      /* Cor do menu */
+    --card-bg: #fff;           /* Cor dos cartões */
+    --link-color: #fff;
+}
+
+/* Classe para o TEMA ESCURO (Dark Mode) */
+body.dark-mode {
+    --bg-color: #1a1a1a;       /* Fundo escuro */
+    --text-color: #f4f4f4;     /* Texto claro */
+    --header-bg: #000;
+    --card-bg: #333;
+}
+
+/* Reset básico para tirar margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s; /* Animação suave na troca de tema */
+}
+
+/* Estilo do Menu */
+header {
+    background-color: var(--header-bg);
+    padding: 1rem;
+    position: fixed; /* Menu fixo no topo */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #3498db; /* Cor azul ao passar o mouse */
+}
+
+/* Botão de mudar tema */
+#toggle-tema {
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Estilo Geral das Seções */
+.secao {
+    padding: 100px 20px 50px; /* Espaço no topo por causa do menu fixo */
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 80vh; /* Ocupa quase a tela toda */
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilos Específicos */
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Deixa a foto redonda */
+    border: 5px solid #3498db;
+    margin-bottom: 20px;
+}
+
+.card, .projeto-card {
+    background: var(--card-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.img-projeto {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background: #27ae60;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+    background: #219150;
+}
